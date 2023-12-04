@@ -37,3 +37,5 @@
 3. Деплой проекта:    
    в GitHub во вкладке "Actions" перейти по ссылке "set up a workflow yourself"    
    и создать файл deploy.yml
+
+4. Создать в папке public файл 404.html
