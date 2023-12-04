@@ -28,7 +28,7 @@
     
 // "lint:js": "eslint src/**/*.{js,jsx}"    
   },    
-/////////////////////    
+//////////////////////////////////    
   
 2. Добавить в корень проекта файлы настройки для    
    редактора - .editorconfig     
@@ -36,31 +36,4 @@
 
 3. Деплой проекта:    
    в GitHub во вкладке "Actions" перейти по ссылке "set up a workflow yourself"    
-   и создать файл deploy.yml со следующим содержимым:    
-///////////////////    
-     name: Build and deploy to GitHub Pages    
-
-on:    
-  push:    
-    branches: [main]    
-
-jobs:    
-  build-and-deploy:    
-    runs-on: ubuntu-latest    
-    steps:    
-      - name: Checkout 🛎️    
-        uses: actions/checkout@v2.3.1    
-
-      - name: Install, lint, build 🔧    
-        run: |    
-          npm install    
-          npm run lint:js    
-          npm run build    
-
-      - name: Deploy 🚀    
-        uses: JamesIves/github-pages-deploy-action@4.1.0    
-        with:    
-          branch: gh-pages    
-          folder: build    
-
-/////////////////////
+   и создать файл deploy.yml
