@@ -2,7 +2,8 @@
 
 1. Добавить в package.json две строчки:                                    
     "homepage": "https://Alekcandrovich.github.io/название проекта/",                               
-    и "lint:js": "eslint src/**/*.{js,jsx}"                              
+    и
+    "lint:js": "eslint src/**/*.{js,jsx}"                              
 ////////////////////////////////////
 
   "name": "car-rental-test",    
